@@ -1,3 +1,5 @@
+Author: Tajrian Rushat 
+
 Compilation:  javac *.java
 Execution:   Must use R or J or D for the program to run. Example Command: java Sim134 400 D
 
