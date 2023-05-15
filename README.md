@@ -1,6 +1,11 @@
 Compilation:  javac *.java
-Execution:    java GameOfLife size iterations initial
+Execution:   Must use R or J or D for the program to run. Example Command: java Sim134 400 D
 
-size is an integer that defines grid size
-iterations is an integer that defines how many computations will occur
-initial is either "R" for random or "L" for gospel glider
+* Grid size is set to be 80 by 80. You can play around with the code to change the grid size or magnification.
+* R stands for Random 
+* J stands for Jam Oscilliator 
+* D stands for Dart Glider
+* 'java Sim134 400 D' 400 is the itreation. One might change it to whatever they want it to be. 
+ 
+
+
