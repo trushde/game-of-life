@@ -3,7 +3,8 @@ Author: Tajrian Rushat
 * Download all files in a single folder 
 
 Compilation:  javac *.java
-Execution:   Must use R or J or D for the program to run. Example Command: java Sim134 400 D
+Execution:   Must use R or J or D for the program to run. 
+Example Command: java Sim134 400 D
 
 * Grid size is set to be 80 by 80. You can play around with the code to change the grid size or magnification.
 * R stands for Random 
