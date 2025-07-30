@@ -32,6 +32,7 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
 
+
 /**
  *  This class provides methods for manipulating individual pixels of
  *  an image using the RGB color format. The alpha component (for transparency)
