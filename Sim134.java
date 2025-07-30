@@ -17,6 +17,9 @@ public class Sim134
     {   magnification = 10;
         cells = new int[x][y];
         pic = new Picture(x * magnification, y * magnification);
+
+        System.out.println("Hello!");
+
     }
     
     // fill a cell with either black or white color
