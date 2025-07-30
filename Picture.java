@@ -353,6 +353,26 @@ public final class Picture implements ActionListener {
      * @return {@code true} if this picture is the same dimension as {@code other}
      *         and if all pixels have the same color; {@code false} otherwise
      */
+
+    /**
+     * Inverts the colors of the image by flipping each RGB component.
+     * For every pixel, the red, green, and blue values are subtracted from 255,
+     * effectively producing a photographic negative of the image.
+     * The alpha channel is ignored since the image uses TYPE_INT_RGB.
+     */
+
+   public void invertColors() {
+       for (int col = 0; col < width; col++) {
+           for (int row = 0; row < height; row++) {
+               int rgb = getRGB(col, row);
+               int r = 255 - ((rgb >> 16) & 0xFF);
+               int g = 255 - ((rgb >> 8) & 0xFF);
+               int b = 255 - (rgb & 0xFF);
+               int invertedRGB = (r << 16) | (g << 8) | b;
+               setRGB(col, row, invertedRGB);
+           }
+       }
+   }
     public boolean equals(Object other) {
         if (other == this) return true;
         if (other == null) return false;
